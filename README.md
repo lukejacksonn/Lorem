@@ -1,4 +1,4 @@
-Sumlipsum
+lorem
 =========
 
 A jQuery plugin that generates random lipsum snippets on the fly..
