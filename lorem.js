@@ -1,4 +1,4 @@
-jQuery.fn.sumLipsum = function (length) {
+jQuery.fn.lorem = function (length) {
   
   var length = length-1 || Math.floor(Math.random()*50)+3;
   var lipsum = function() {
