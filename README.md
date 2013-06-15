@@ -1,7 +1,7 @@
 Loremjs
 =========
 
-A jQuery plugin that generates random 'lorem ipsum' snippets on the fly. When designing/developing web interfaces you sometimes need to model content you don't have, usually called filler. Standard practice for filler text is to copy snippets of the of an altered Latin passage written by Marcus Tullius Cicero (a roman philosophor) into your code like so..
+A jQuery plugin that generates random 'lorem ipsum' snippets on the fly. When designing/developing web interfaces you sometimes need to model content you don't have, usually called filler. Standard practice for filler text is to copy snippets of the of an altered Latin passage written by Marcus Tullius Cicero (a Roman philosopher) into your code like so..
 
 ```html
 <div>
@@ -20,10 +20,10 @@ The content makes no sense to anybody but for demonstration purposes it works gr
 If you are trying to model dynamic content on the other hand (say a list of user comments with undefined lengths).. then this system soon becomes very expensive to maintain and doesn't gives an accurate representation of what you are trying to model anyway. Loremjs is a javascript solution developed to solve this problem..
 
 
-Basic Usage
+USAGE
 --------
 
-Using loremjs you can model a div containing a paragraph of lorem ipsum filler text fifty words long like so..
+Using loremjs you can model a div containing a paragraph of filler text fifty words long like so..
 
 ```html
 <div>
@@ -46,18 +46,13 @@ On page load the model above is rendered into something like..
 </div>
 ```
 
-The idea being that you can populate your layout with meaningless filler.. not your code!
-
-
-ADVANCED USAGE
---------
-
-If you want to populate elements with filler text without using the 'lorem-' class you can call the plugin directly on any container element..
+The idea being that you can populate your layout with meaningless filler.. not your code! If you want to populate elements without using the 'lorem-' class you can call the plugin directly on any container element..
 
 ```javascript
 $('div').lorem(50) // Equivelent to <div class-'lorem-50'></div>
 ```
-If no argument is passed into the lorem function and no 'lorem-' class is specified on the element, then the element will be populated with a lorem snippet of arbitrary length (between 3 and 50 words).  
+If no argument is passed into the function and no 'lorem-' class is specified on the element, then the element will be populated with a snippet of arbitrary length (between 3 and 50 words).  
+
 
 ***
 
