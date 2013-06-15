@@ -49,9 +49,9 @@ On page load the model above is rendered into something like..
 The idea being that you can populate your layout with meaningless filler.. not your code! If you want to populate elements without using the 'lorem-' class you can call the plugin directly on any container element..
 
 ```javascript
-$('div').lorem(50) // Equivelent to <div class-'lorem-50'></div>
+$('div').lorem(50) // Populates all divs with a random lorem snippet 50 words long
 ```
-If no argument is passed into the function and no 'lorem-' class is specified on the element, then the element will be populated with a snippet of arbitrary length (between 3 and 50 words).  
+If no argument is passed into the function and no 'lorem-' class is attached to the element in question, then the element will be populated with a snippet of arbitrary length (between 3 and 50 words).  
 
 
 ***
