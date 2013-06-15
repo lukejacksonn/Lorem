@@ -20,13 +20,13 @@
                 out += " ";
 
 		//Append to out, capitalize first letter if necessary
-                out += (charAtEndOfOut('.',1) ||  charAtEndOfOut('.',1)) 
+                out += (charAtEndOfOut('.',1) ||  charAtEndOfOut('?',1)) 
                 ?  word[0].toUpperCase()+word.slice(1) 
                 :  word.toLowerCase();
             }
 
             //Append full stop to the end of string, strip punctuation if necessary
-            out = (charAtEndOfOut('.') || charAtEndOfOut(',')  || charAtEndOfOut('?')) 
+            out = (charAtEndOfOut(',') || charAtEndOfOut('.')  || charAtEndOfOut('?')) 
             ? out.slice(0,-1) + "." 
             : out + ".";
 
