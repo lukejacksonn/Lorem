@@ -1,4 +1,4 @@
-Loremjs
+Lorem
 =========
 
 A jQuery plugin that generates random 'lorem ipsum' snippets on the fly. When designing/developing web interfaces you sometimes need to model content you don't have, usually called filler. Standard practice for filler text is to copy snippets of the of an altered Latin passage written by Marcus Tullius Cicero (a Roman philosopher) into your code like so..
@@ -23,7 +23,7 @@ If you are trying to model dynamic content on the other hand (say a list of user
 USAGE
 --------
 
-Using loremjs you can model a div containing a paragraph of filler text fifty words long like so..
+Using the lorem plugin you can model a div containing a paragraph of filler text fifty words long like so..
 
 ```html
 <div>
@@ -31,7 +31,7 @@ Using loremjs you can model a div containing a paragraph of filler text fifty wo
 <div>
 ```  
 
-Loremjs targets any element with a class that has the prefix 'lorem-' and populates it with a given amount of random words from Cicero's text. The amount of words is defined by the class suffix which in this case is '50'.  
+Lorem targets any element with a class that has the prefix 'lorem-' and populates it with a given amount of random words from Cicero's text. The amount of words is defined by the class suffix which in this case is '50'.  
 
 On page load the model above is rendered into something like..
 
@@ -56,4 +56,4 @@ If no argument is passed into the function and no 'lorem-' class is attached to 
 
 ***
 
-DEMO : http://lukejacksonn.com/Loremjs
+DEMO : http://lukejacksonn.com/Lorem
