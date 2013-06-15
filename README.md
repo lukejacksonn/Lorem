@@ -37,7 +37,7 @@ On page load the model above is rendered into something like..
 
 ```html
 <div>
-    <p>
+    <p class='lorem-50'>
         Lorem est quis anim adipisicing mollit dolor culpa est cupidatat do ipsum veniam,
         sint non commodo nisi adipisicing officia amet, esse veniam, duis veniam, non sed
         non esse non dolore ut velit aute sint aute commodo dolore consectetur in voluptate
