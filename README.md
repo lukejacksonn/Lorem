@@ -1,7 +1,7 @@
 Lorem
 =========
 
-A jQuery plugin that generates random 'lorem ipsum' snippets on the fly. When designing/developing web interfaces you sometimes need to model content you don't have, usually called filler. Standard practice for filler text is to copy snippets of the of an altered Latin passage written by Marcus Tullius Cicero (a Roman philosopher) into your code like so..
+A jQuery plugin that generates random 'lorem ipsum' snippets on the fly. When designing/developing web interfaces you sometimes want to model content you don't have (filler). Standardly, you copy snippets of the of an altered Latin text into your code..
 
 ```html
 <div>
@@ -15,9 +15,9 @@ A jQuery plugin that generates random 'lorem ipsum' snippets on the fly. When de
 </div>
 ```
 
-The content makes no sense to anybody but for demonstration purposes it works great. This is a simple solution that works if you want to model short amounts of static content of which you know the length and know it will never change. 
+The content makes no sense but for demonstrative purposes it works great. When trying to model dynamic content (say a list of comments).. then copy/pasting becomes hard work and may not give an accurate representation real content would look like. 
 
-If you are trying to model dynamic content on the other hand (say a list of user comments with undefined lengths).. then this system soon becomes very expensive to maintain and doesn't gives an accurate representation of what you are trying to model anyway. Loremjs is a javascript solution developed to solve this problem..
+This plugin was built to keep your filler realistically dynamic and your code tidy!
 
 
 USAGE
@@ -31,7 +31,7 @@ Using the lorem plugin you can model a div containing a paragraph of filler text
 <div>
 ```  
 
-Lorem targets any element with a class that has the prefix 'lorem-' and populates it with a given amount of random words from Cicero's text. The amount of words is defined by the class suffix which in this case is '50'.  
+Lorem targets any element with a class that has the prefix 'lorem-' and populates it with a given amount of random words. The amount of words is defined by the class suffix which in this case is '50'.  
 
 On page load the model above is rendered into something like..
 
