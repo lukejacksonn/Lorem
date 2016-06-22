@@ -34,7 +34,10 @@
       //Append full stop to the end of string, strip punctuation if necessary
       out = (charAtEndOfOut('.') || charAtEndOfOut(',') || charAtEndOfOut('?')) ? out.slice(0, -1) + "." : out + ".";
 
-      $(this).text(out);
+      if ($(this).is('input'))
+        $(this).val(out);
+      else
+        $(this).text(out);
 
     });
   }
