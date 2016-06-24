@@ -3,7 +3,7 @@
     return this.each(function() {
 
       // Amount of words required
-      var _length = _length || $(this).data('lorem') || (Math.floor(Math.random() * 50) + 3);
+      var length = _length || $(this).data('lorem') || (Math.floor(Math.random() * 50) + 3);
 
       // Helper functions
       var charAtEndOfOut = function(char, step) {
@@ -22,7 +22,7 @@
         word = "",
         out = capitalize(randomWord());
 
-      for (var i = 1; i < _length; i = i + 1) {
+      for (var i = 1; i < length; i = i + 1) {
         //Select random word from paragraph
         word = randomWord();
         out += " ";
@@ -34,7 +34,10 @@
       //Append full stop to the end of string, strip punctuation if necessary
       out = (charAtEndOfOut('.') || charAtEndOfOut(',') || charAtEndOfOut('?')) ? out.slice(0, -1) + "." : out + ".";
 
-      $(this).text(out);
+      if ($(this).is('input'))
+        $(this).val(out);
+      else
+        $(this).text(out);
 
     });
   }
